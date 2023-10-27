@@ -53,5 +53,16 @@ body{
     .header__nav{
         display: none;
     }
-    
+}
+
+.hero-image{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+}
+
+.hero-image img{
+    max-width: 606px;
+    height: 600px;
+    object-fit: cover;
 }
