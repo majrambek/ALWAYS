@@ -238,3 +238,101 @@ body{
     }
     
 }
+
+.envir{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.envir__content{
+    padding: 0 20px;
+}
+
+.envir-title{
+    color: #12100C;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0;
+}
+
+.envir-text{
+    color: rgba(18, 16, 12, 0.70);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.92px; 
+
+    margin: 0;
+    padding: 0 0 100px 0;
+}
+
+.envir-btn{
+    width: 162px;
+    height: 32px;
+    border-radius: 10.5px;
+    background: #FFAE33;
+
+    color: #12100C;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+}
+
+.envir-btn2{
+    width: 162px;
+    height: 32px;
+    border-radius: 10.5px;
+    background:#FFB0AE;
+
+    color: #12100C;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+}
+
+.envir-image{
+    border-radius: 20px;
+}
+
+.envir-image img{
+    max-width: 590px;
+    height: 472x;
+}
+
+@media screen and (max-width:1025px) {
+    .envir{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+}
+
+@media screen and (max-width:995px) {
+    .envir-text{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:605px) {
+     .envir-title{
+        font-size: 18px;
+        text-align: center;
+     }
+}
+
+@media screen and (max-width:605px) {
+    .envir-image img{
+        width: 320px;
+        height: 320px;
+    }
+    
+}
+
+
