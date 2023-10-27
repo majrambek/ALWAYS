@@ -10,7 +10,7 @@ body{
 }
 
 .header{
-    padding: 0 20px ;
+    padding: 0 15px ;
 }
 
 .header__content{
@@ -22,6 +22,7 @@ body{
 
 .header-logo{
     text-decoration: none;
+
 }
 
 .header__nav{
@@ -56,10 +57,14 @@ body{
 }
 
 .hero{
-    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
 .hero-title{
+    margin: 0;
     color: #12100C;
     font-size: 80px;
     font-style: normal;
@@ -68,6 +73,8 @@ body{
 }
 
 .hero-pretitle{
+    margin: 0; 
+    padding: 20px 0 0 0;
     color: rgba(18, 16, 12, 0.70);
     font-size: 23px;   
     font-style: normal;
@@ -76,13 +83,25 @@ body{
 
 }
 
+.hero-pretitle2{
+    margin: 0;
+    padding: 0;
+    color: rgba(18, 16, 12, 0.70);
+    font-size: 23px;   
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.92px; 
+}
+
 .hero__button-text{
+    padding: 20px 0;
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
 .hero-text{
+    margin: 0;
     color: rgba(18, 16, 12, 0.70);
     font-size: 16px;
     font-style: normal;
@@ -104,19 +123,58 @@ body{
 }
 
 .hero-icon{
+    padding: 10px 0;
     display: flex;
     align-items: center;
     gap:30px;
 }
 
-.hero-image{
-    display: flex;
-    justify-content: right;
-   
-}
 
 .hero-image img{
     max-width: 600px;
     height: 600px;
      
+}
+
+@media screen and (max-width:1025px) {
+    .hero-image img{
+        width: 320px;
+        height: 320px;
+    }
+    
+}
+
+@media screen and (max-width:1022px) {
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:563px) {
+    .hero-title{
+        font-size: 55px;
+    }
+    
+}
+
+@media screen and (max-width:448px) {
+    .hero-pretile{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .hero__button-text{
+        flex-direction: column-reverse;
+    }
+    
+}
+
+@media screen and (max-width:330px) {
+    .hero-icon{
+        text-align: center;
+    }
+    
 }
