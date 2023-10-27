@@ -61,6 +61,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+  
     
 }
 
@@ -75,7 +76,7 @@ body{
 
 .hero-pretitle{
     margin: 0; 
-    padding: 20px 0 0 0;
+    padding: 20px 15px 0 15px;
     color: rgba(18, 16, 12, 0.70);
     font-size: 23px;   
     font-style: normal;
@@ -86,7 +87,7 @@ body{
 
 .hero-pretitle2{
     margin: 0;
-    padding: 0;
+    padding: 0 15px 0 15px;
     color: rgba(18, 16, 12, 0.70);
     font-size: 23px;   
     font-style: normal;
@@ -124,7 +125,7 @@ body{
 }
 
 .hero-icon{
-    padding: 10px 0;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     gap:30px;
@@ -155,6 +156,7 @@ body{
 @media screen and (max-width:563px) {
     .hero-title{
         font-size: 55px;
+        text-align: center;
     }
     
 }
@@ -178,6 +180,10 @@ body{
         text-align: center;
     }
     
+}
+
+.select{
+    padding: 0 15px;
 }
 
 .select__content{
@@ -267,7 +273,12 @@ body{
     line-height: 31.92px; 
 
     margin: 0;
-    padding: 0 0 100px 0;
+    padding: 0 0 100px 15px;
+}
+
+.envir__content-btn{
+    display: flex;
+    gap: 15px;
 }
 
 .envir-btn{
@@ -314,17 +325,27 @@ body{
     }    
 }
 
+@media screen and (max-width:605px) {
+    .envir-title{
+       font-size: 18px;
+       text-align: center;
+    }
+}
+
 @media screen and (max-width:995px) {
     .envir-text{
         font-size: 20px;
     }
 }
 
-@media screen and (max-width:605px) {
-     .envir-title{
-        font-size: 18px;
-        text-align: center;
-     }
+@media screen and (max-width:330px) {
+    .envir__content-btn{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+        
+    }
+    
 }
 
 @media screen and (max-width:605px) {
@@ -334,5 +355,48 @@ body{
     }
     
 }
+
+.remote__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remote-title{
+    color: #12100C;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71.82px; 
+}
+
+.remote-image{
+    text-align: center;
+}
+
+.remote-image img{
+    max-width: 1269px;
+    height: 821px;
+    border-radius: 14px;
+    background: url(<path-to-image>), lightgray 50% / contain no-repeat;
+
+}
+
+@media screen and(max-width:733px) {
+    .remote-title{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1269px) {
+    .remote-image img{
+        width: 320px;
+        height: 320px;
+    }
+    
+}
+
+
 
 
