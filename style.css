@@ -357,6 +357,7 @@ body{
 }
 
 .remote__content{
+    padding: 200px 0 0 0 ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -373,10 +374,70 @@ body{
 
 .remote-image{
     text-align: center;
+    border-radius: 14px;
+    box-shadow: -2px 2px 15px 8px rgba(255, 138, 0, 0.40);
+}
+
+.remote-text{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(18, 16, 12, 0.70);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.92px; 
+}
+
+.remote__button{
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.remote-btn{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 250px;
+    height: 47px;
+    border-radius: 9px;
+    background: #FFF;
+    border: 1px solid #000;
+    color: #12100C;
+    text-align: center;
+     font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.86px; 
+
+}
+
+.remote-btn2{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 250px;
+    height: 47px;
+    border-radius: 9px;
+    background: #FFF;
+    border: 1px solid #000;
+    color: #12100C;
+    text-align: center;
+     font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.86px;
 }
 
 .remote-image img{
-    max-width: 1269px;
+    max-width: 1220px;
     height: 821px;
     border-radius: 14px;
     background: url(<path-to-image>), lightgray 50% / contain no-repeat;
@@ -389,14 +450,27 @@ body{
     }
 }
 
-@media screen and (max-width:1269px) {
+@media screen and (max-width:1220px) {
     .remote-image img{
         width: 320px;
         height: 320px;
     }
+}
+
+@media screen and (max-width:1200px) {
+    .remote-text{
+        font-size: 16px;
+    }
     
 }
 
+@media screen and (max-width:525px) {
+    .remote__button{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+}
 
 
 
