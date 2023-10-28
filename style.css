@@ -222,6 +222,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color: #12100C;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.72px; 
 }
 
 @media screen and (max-width:955px) {
@@ -472,5 +479,131 @@ body{
     }
 }
 
+.parrent-title{
+    margin: 100px 0 0 ;
+    color: #12100C;
+    text-align: center;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63.72px; 
+}
 
+.parrent__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #FFF;
+    list-style: none;
+    text-align: center;
+   padding: 0 15px;
+}
+
+.parrent__card{
+    max-width: 448px;
+    height: 228px;
+    background:rgb(240, 237, 237);
+    border-radius: 8px;
+    
+}
+
+.parrent__card-pretitle{
+    color: #12100C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.parrent__card-text{
+    color: #12100C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+.parrent-image img{
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+}
+
+.parrent-image{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.image-person{
+    padding: 0   15px;
+}
+.image-title{
+    margin: 0;
+    color: #12100C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.image-pretitle{
+    margin: 5px 0 0 ;
+    color: #12100C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    
+
+}
+
+.image-text{
+    margin: 0;
+    color: #12100C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.parrent-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 0 0;
+    padding: 0 15px;
+}
+
+@media screen and (max-width:1240px) {
+    .parrent__cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+}
+
+@media screen and (max-width:485px) {
+    .parrent__card{
+        width: 320px;
+        height: 260px
+    }
+    
+}
+
+@media screen and (max-width:679px) {
+    .parrent-title{
+        font-size: 34px;
+    }
+    
+}
+
+@media screen and (max-width:1230px) {
+    .parrent-icon{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
 
